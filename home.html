@@ -6,12 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="main">
         <div class="ships">
             <h1>starships:</h1>
-            <a href="#">starship_1</a>
+            <a href="#" id="starship1" onclick="displayData()">Death Star</a>
             <a href="#">starship_2</a>
             <a href="#">starship_3</a>
             <a href="#">starship_4</a>
@@ -22,10 +24,59 @@
             <a href="#">starship_9</a>
             <a href="#">starship_10</a>
         </div>
-        <div class="each">
+        <div class="data">
+            <h1 id="title">choose a starship!</h1>
+            <div id="ship-data" style="display: none;">
+                <div class="slideshow-container">
 
+                    <div class="mySlides fade" id="first-slide">
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>  
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>  
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>  
+                      <p>manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems</p>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+            </div>
+            
         </div>
     </div>
+
+
+
+    
 </body>
 
 </html>
