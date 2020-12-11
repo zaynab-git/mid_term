@@ -1,4 +1,5 @@
 
+/* انتخاب بکگراند و ویژگی های آن و فونت کلی */
 body {
     background-image: url("background.jpg");
     background-repeat: no-repeat;
@@ -7,6 +8,8 @@ body {
     height: 100;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* تعیین فاصله ی بخش اصلی از اطراف صفحه و بکگراند آن */
 .main {
     border-radius: 2rem;
     width: 55rem;
@@ -18,11 +21,13 @@ body {
     flex-direction: row;
 }
 
+/* تعیین فونت کلی متن ها و پدینگ */
 p {
     font-size: large;
     padding: 0.1rem 0;
 }
 
+/* بکگراند و ابعاد بخش اسم سفینه ها */
 .ships {
 
     background-color: rgba(255,255,255,0.3);
@@ -35,11 +40,8 @@ p {
     border-radius: 2rem;
     max-width: 20rem;
 }
- .ships:hover {
-    background-color: rgba(255,255,255,0.4);
- }
 
-
+/* بکگراند و ابعاد بخش اطلاعات سفینه ها */
 .data {
     flex-grow: 6;
     background-color: rgba(255,255,255,0.3);
@@ -47,6 +49,8 @@ p {
     margin-left: 1rem;
     border-radius: 2rem;
 }
+
+/* رنگ و ابعاد و سایه ی لینک های اسم سفینه ها */
 .ships a{
     color: white;
     text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #a11b4f, 0 0 10px #a11b4f, 0 0 13px #a11b4f, 0 0 15px #a11b4f, 0 0 18px #a11b4f;
@@ -58,10 +62,12 @@ p {
     padding-left: 7rem;
 }
 
+/* تغییر رنگ لینک ها با حرک موس روی آن ها */
 .ships a:hover{
     text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #003de6, 0 0 10px #003de6, 0 0 13px #003de6, 0 0 15px #003de6, 0 0 18px #003de6;
 }
 
+/* رنگ و پدین و ابعاد تیتیر بخش اسم سفینه ها */
 .ships h1{
     padding-left: 2rem;
     text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #a11b4f, 0 0 10px #a11b4f, 0 0 13px #a11b4f, 0 0 15px #a11b4f, 0 0 18px #a11b4f;
@@ -70,6 +76,7 @@ p {
     padding-bottom: 1rem;
 }
 
+/* رنگ و پدین و ابعاد تیتیر بخش اطلاعات سفینه ها */
 .data h1{
     text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #a11b4f, 0 0 10px #a11b4f, 0 0 13px #a11b4f, 0 0 15px #a11b4f, 0 0 18px #a11b4f;
     font-weight: 500;
