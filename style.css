@@ -87,3 +87,10 @@ p {
     color: #fff;  
 
 }
+
+/* ویژگی های تیتر بخش اطلاعات سفینه ها */
+#ship_title {
+    margin-left: 3rem;
+    font-size: x-large;
+  }
+  

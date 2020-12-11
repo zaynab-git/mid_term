@@ -1,11 +1,14 @@
 
+/* این بخش به طور کلی مربوط به اسلاید ها و شیوه نمایش آن هاست */
+
+/* هر اسلاید ابتدا ناپدید است و با کلیک روی لینک ها پدیداز می شود */
 .mySlides {
   display: none;
   margin-left: 4rem;
   padding-right: 2rem;
 }
 
-/* Slideshow container */
+/* رنگ محتوای اسلاید ها و پزیشن آن و پدینگ و مارجین و ابعاد */
 .slideshow-container {
   position: relative;
   max-width: 40rem;
@@ -14,7 +17,7 @@
   text-shadow:  0 0 1px #ffffff,0 0 2px #a11b4f;
 }
 
-/* Next & previous buttons */
+/* رنگ و ابعاد و دیگر ویژگی های آیکون های حرکت بین اسلاید ها */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -30,19 +33,18 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* با هاور کردن روی آیکون ها رنگ آنها تغییر می کند */
 .prev:hover, .next:hover {
   background-color: rgba(4, 56, 226, 0.8);
   color:white;
 }
 
-/* The dots/bullets/indicators */
+/* ویژگی های نقاط نشان دهنده اسلاید */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -54,16 +56,13 @@
   transition: background-color 0.6s ease;
 }
 
+/* با هاور کردن روی نقطه ها یا انتخاب آنها رنگشان تغییر می کند */
 .active, .dot:hover {
   background-color: white;
 }
 
-#ship_title {
-  margin-left: 3rem;
-  font-size: x-large;
-}
 
-/* Fading animation */
+/* انیمیشن تغییر اسلاید ها */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
