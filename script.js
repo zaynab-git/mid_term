@@ -1,33 +1,54 @@
-      
-function first()
-{
-  fetch('https://swapi.dev/api/starships/3/')
-  .then(response => response.json())
-  .then(all => {
-    for (var i in all) {
-      if (i == "results")
-      {
-        for (var j in all[i])
-        {
-          
-        }
-      }
-});
-}
 
-function displayData() {
-
-  fetch('https://swapi.dev/api/starships/3/')
+function displayData(num) {
+  
+  fetch('https://swapi.dev/api/starships/'+ num +'/')
   .then(response => response.json())
   .then(data => {
+    document.getElementById("ship_title").innerHTML = data.name;
     for (var key in data) {
-          item = document.getElementById(key);
-          item.innerHTML = data[key] + "";
+          if (key == 'films'){
+            item = document.getElementById(key);
+            item.innerHTML = "films";
+            for (key2 in data[key])
+            {
+              fetch(data[key][key2])
+              .then(response => response.json())
+              .then(film_data => {
+                item.innerHTML = film_data.title + item.innerHTML;
+                console.log(item.innerHTML);
+              });
+            }
+          }
+          else{
+            if (key == 'pilots'){
+              item = document.getElementById(key);
+              item.innerHTML = "pilots";
+              for (key2 in data[key])
+              {
+                fetch(data[key][key2])
+                .then(response => response.json())
+                .then(film_data => {
+                  item.innerHTML = film_data.title + item.innerHTML;
+                  console.log(item.innerHTML);
+                });
+              }
+            }
+            else{
+              item = document.getElementById(key);
+              item.innerHTML = key + " : " + data[key];
+            }
+            
+          }
+         
     }
   });
+  
     document.getElementById("title").style.display = "none";
+    if (document.getElementById("first-slide").style.display != "none"){
+      document.getElementById("first-slide").style.display = "block";
+    }
     document.getElementById("ship-data").style.display = "block";
-    document.getElementById("first-slide").style.display = "block";
+    
 }
 
 var slideIndex = 1;

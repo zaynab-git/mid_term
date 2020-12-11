@@ -7,30 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
-    <script type="text/javascript" src="data.json"></script>
     <script src="script.js"></script>
 
 </head>
-<body onload="first()">
+<body >
+    <!-- صفحه از دو بخش کلی اسم صفینه ها و اطلاعاتشون تشکیل شده -->
     <div class="main">
+        <!-- قسمت اسم سفینه ها -->
         <div class="ships">
             <h1>starships:</h1>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
-            <a href="#" onclick="displayData()"></a>
+            <!-- اسم هر سفینه یک لینک است که تابع مربوط به نمایش اطلاعات آن سفینه را فعال می کند -->
+            <a href="#" onclick="displayData(2)">CR90 corvette</a>
+            <a href="#" onclick="displayData(3)">Star Destroyer</a>
+            <a href="#" onclick="displayData(5)">Sentinel-class landing craft</a>
+            <a href="#" onclick="displayData(9)">Death Star</a>
+            <a href="#" onclick="displayData(10)">Millennium Falcon</a>
+            <a href="#" onclick="displayData(11)">Y-wing</a>
+            <a href="#" onclick="displayData(12)">X-wing</a>
+            <a href="#" onclick="displayData(13)">TIE Advanced x1</a>
+            <a href="#" onclick="displayData(15)">Executor</a>
+            <a href="#" onclick="displayData(17)">Rebel transport</a>
         </div>
+        <!-- قسمت اطلاعات هر سفینه -->
         <div class="data">
             <h1 id="title">choose a starship!</h1>
+            <!-- این بخش بعد کلیک روی هر لینک دیگر نمایش داده نمی شود -->
             <div id="ship-data" style="display: none;">
+
+                <!-- اطلاعات سفینه به صورت اسلاید نمایش داده می شود -->
                 <div class="slideshow-container">
 
+                    <!-- تیتر یا اسم سفینه -->
+                    <p id="ship_title"></p>
+
+                    <!-- صفحه اول اطلاعات سفینه -->
                     <div class="mySlides fade" id="first-slide">
                         <p id="name"></p>
                         <p id="model"></p>
@@ -40,6 +50,7 @@
                         <p id="max_atmosphering_speed"></p>
                     </div>
                     
+                    <!-- صفحه دوم اطلاعات سفینه -->
                     <div class="mySlides fade" id="second-slide">
                         <p id="crew"></p>
                         <p id="passengers"></p>
@@ -49,6 +60,7 @@
                         <p id="MGLT"></p>
                     </div>
                     
+                    <!-- صفحه سوم اطلاعات سفینه -->
                     <div class="mySlides fade" id="third-slide">
                         <p id="starship_class"></p>
                         <p id="pilots"></p>
@@ -58,12 +70,14 @@
                         <p id="url"></p>
                     </div>
                     
+                    <!--آیکون های حرکت بین اسلاید ها-->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     
                     </div>
                     <br>
                     
+                    <!-- نمایش اینکه در کدوم اسلاید هستیم -->
                     <div style="text-align:center">
                       <span class="dot" onclick="currentSlide(1)"></span> 
                       <span class="dot" onclick="currentSlide(2)"></span> 
