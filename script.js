@@ -1,4 +1,8 @@
 
+
+// این تابع تابع اصلی فتچ کردن و نمایش اطلاعات هر سفینه است
+// در نمایش اسم فیام ها و خلبان ها مشکلی در نمایش اسم آن ها وجود داشت 
+// با وجد اینکه با نمایش آنها در کنسول متوجه خواهید شد که محتوای آنها به درست فتچ و انتخاب شده
 function displayData(num) {
   
   fetch('https://swapi.dev/api/starships/'+ num +'/')
@@ -51,6 +55,9 @@ function displayData(num) {
     
 }
 
+
+//این بخش هم مریوط به توابع تغییر بین اسلاید ها است
+// هر اسلاید یک عدد دارد که با کلیک بر روی آیکون های چپ و راست عدد اسلاید فعال تغییر می کند
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -62,6 +69,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// این تابع تایع اصلی نمایش و عدم نمایش هر اسلاید است
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
